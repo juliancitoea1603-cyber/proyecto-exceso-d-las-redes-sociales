@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto de grado </title>
+  <link rel="stylesheet" href="css/bootsrapV5.3.2.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/main.js"></script>
+
+ 
+</head>
+
+<body>
+
+      <!-- Pantalla de Login -->
+  <div id="loginScreen" class="login-screen">
+    <div class="login-box">
+      <h1 class="text-title text-center mb-4">Bienvenido</h1>
+      <p class="text-center text-login">Uso excesivo de redes sociales y baja autoestima en adolescentes</p>
+      <div class="text-center">
+      <img src="img/Logo.png" width="200" height="200" alt="Imagen de bienvenida" class="img-logo-login">
+      </div>
+      <form id="formLogin">
+        <input type="text" id="inputNombre" class="form-control mb-3" placeholder="Ingrese su nombre">
+        <button type="submit" class="btn-temas w-100">Ingresar</button>
+      </form>
+      <div id="alertContainer"></div>
+    </div>
+  </div>
+
+  <!-- Contenido de la aplicación -->
+  <div id="appContent" style="display:none;">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuNav">
+          <ul class="navbar-nav ms-auto">
+
+
+              <!-- Contexto -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" 
+                       role="button" data-bs-toggle="dropdown">
+                        Contexto
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="javascript:cargarpagina('Planteamientodelproblema.html')">
+                                Planteamiento del problema
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="javascript:cargarpagina('Objetivos.html')">
+                                Objetivos
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="javascript:cargarpagina('resumen.html')">
+                                Resumen
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="javascript:cargarpagina('marco.html')">
+                                Marco de referencia
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Ruta del proyecto -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" 
+                       role="button" data-bs-toggle="dropdown">
+                        Ruta del proyecto
+                    </a>
+
+                    <ul class="dropdown-menu">
+
+                        <li>
+                            <a class="dropdown-item" href="javascript:cargarpagina('introduccion.html')">
+                                Introducción
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="javascript:cargarpagina('justificacion.html')">
+                                Justificación
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="javascript:cargarpagina('evidencias.html')">
+                                Evidencias 
+                            </a>
+                        </li>
+                           <li>
+                            <a class="dropdown-item" href="javascript:cargarpagina('conclusiones.html')">
+                               Conclusiones
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+           
+           
+        
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:cargarpagina('actividades.html')">Actividades</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:cargarpagina('juego.html')">Juego</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:cargarpagina('creditos.html')">Créditos</a>
+            </li>
+          </ul>
+        </div>
+        <a class="navbar-brand" href="javascript:cargarpagina('inicio.html')"><img src="img/logo.png"
+            class="img-logo"></a>
+      </div>
+    </nav>
+
+  </header>
+  <section id="contenido">
+
+
+
+  </section>
+  <footer class="footer">
+    <p class="mb-0">© <span id="year"></span>Colegio Gimnasio Santander de Tunja - Todos los derechos reservados Julian Echeverria</p>
+    <img src="img/Logo.png" alt="" class="img-logo">
+  </footer>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,274 @@
+
+  <section class="seccion-galeria">
+    <div class="container">
+
+    
+
+      <!-- Carrusel Bootstrap -->
+      <div
+        id="carruselImagenes"
+        class="carousel slide carousel-fade carrusel-proyecto"
+        data-bs-ride="carousel"
+        data-bs-interval="5000"
+      >
+
+        <!-- Indicadores -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carruselImagenes"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Imagen 1"
+          ></button>
+
+          <button
+            type="button"
+            data-bs-target="#carruselImagenes"
+            data-bs-slide-to="1"
+            aria-label="Imagen 2"
+          ></button>
+
+          <button
+            type="button"
+            data-bs-target="#carruselImagenes"
+            data-bs-slide-to="2"
+            aria-label="Imagen 3"
+          ></button>
+        </div>
+
+        <!-- Imágenes -->
+        <div class="carousel-inner">
+
+          <!-- Imagen 1 -->
+          <div class="carousel-item active">
+            <img
+              src="img/portada1.png"
+              class="d-block w-100"
+              alt="portada1.png"
+            >
+
+          </div>
+
+          <!-- Imagen 2 -->
+          <div class="carousel-item">
+            <img
+              src="img/portada2.png"
+              class="d-block w-100"
+              alt="portada2.png"
+            >
+
+         
+          </div>
+
+          <!-- Imagen 3 -->
+          <div class="carousel-item">
+            <img
+              src="img/portada3.png"
+              class="d-block w-100"
+              alt="portada3.png"
+            >
+
+        
+          </div>
+
+        </div>
+
+        <!-- Botón anterior -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carruselImagenes"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+
+        <!-- Botón siguiente -->
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carruselImagenes"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+
+  
+ <section class="card-principal">
+  <div class="encabezado-creditos">
+        <h2 class="text-center section-title">Galería de videos</h2>
+        <p class="text-center mb-4">
+            Haz clic en cada video para verlo en una ventana modal.
+        </p>
+
+        <div class="row g-4">
+
+            <!-- Video 1 -->
+            <div class="col-md-4">
+                <div class="card video-card h-100">
+                    <img src="img/video1.jpg" class="card-img-top" alt="Video 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Video educativo 1</h5>
+                        <p class="card-text">Introducción al tema principal.</p>
+                    <button class="btn btn-light btn-actividad" data-bs-toggle="modal" data-bs-target="#modal1">
+            Ver Video
+          </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="col-md-4">
+                <div class="card video-card h-100">
+                    <img src="img/video2.jpg" class="card-img-top" alt="Video 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Video educativo 2</h5>
+                        <p class="card-text">Explicación complementaria.</p>
+                       <button class="btn btn-light btn-actividad" data-bs-toggle="modal" data-bs-target="#modal2">
+            Ver Video
+          </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video 3 -->
+            <div class="col-md-4">
+                <div class="card video-card h-100">
+                    <img src="img/video3.jpg" class="card-img-top" alt="Video 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Video educativo 3</h5>
+                        <p class="card-text">Actividad audiovisual.</p>
+                          <button class="btn btn-light btn-actividad" data-bs-toggle="modal" data-bs-target="#modal3">
+            Ver Video
+          </button>
+                    </div>
+                </div>
+            </div>
+
+              <!-- Video 4 -->
+            <div class="col-md-4">
+                <div class="card video-card h-100">
+                    <img src="img/video4.jpg" class="card-img-top" alt="Video 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Video educativo 4</h5>
+                        <p class="card-text">Actividad audiovisual.</p>
+                       <button class="btn btn-light btn-actividad" data-bs-toggle="modal" data-bs-target="#modal4">
+            Ver Video
+          </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <!-- MODAL 1 -->
+<div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="modal1Label">Video 1</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+
+      <div class="modal-body">
+        <iframe 
+          src="pages/bienvenida-proyecto.html">
+        </iframe>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+    <!-- MODAL 2 -->
+<div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="modal2Label">Video 2</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+
+      <div class="modal-body">
+        <iframe 
+          src="pages/cierre-proyecto-soluciones.html">
+        </iframe>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- MODAL 3 -->
+<div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="modal3Label">Video 3</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+
+      <div class="modal-body">
+        <iframe 
+          src="pages/bienvenida-proyecto.html">
+        </iframe>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- MODAL 4 -->
+<div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="modal4Label">Video 4</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+
+      <div class="modal-body">
+        <iframe 
+          src="pages/bienvenida-proyecto.html">
+        </iframe>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+
+    </div>
+  </div>
+</div>
